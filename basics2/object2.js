@@ -5,7 +5,7 @@ tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
 tinderUser.isLoggedIn = false
 
-// console.log(tinderUser);
+// console.log(tinderUser.name);
 
 const regularUser = {
     email: "some@gmail.com",
@@ -17,7 +17,7 @@ const regularUser = {
     }
 }
 
-// console.log(regularUser.fullname.userfullname.firstname);
+console.log(regularUser.fullname.userfullname.firstname);
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
@@ -58,15 +58,16 @@ users[1].email
 const course = {
     coursename: "js in hindi",
     price: "999",
-    courseInstructor: "hitesh"
+    courseInstructor: "sudhish"
 }
 
 // course.courseInstructor
 
-const {courseInstructor: instructor} = course
+// const {coursename: i} = course
+const{courseInstructor:sexy}=course
 
 // console.log(courseInstructor);
-console.log(instructor);
+console.log(sexy);
 
 // {
 //     "name": "hitesh",
@@ -74,8 +75,9 @@ console.log(instructor);
 //     "price": "free"
 // }
 
+//{}curly braces are used for destructuring 
 [
     {},
     {},
     {}
-]
+]       //API JSON
