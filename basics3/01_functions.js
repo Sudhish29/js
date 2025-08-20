@@ -32,24 +32,24 @@ function loginUserMessage(username="s"){   //default value is passed if nothing 
 }
 //  console.log(loginUserMessage());    //undefined
 
-// console.log(loginUserMessage("Sudhish")); 
+console.log(loginUserMessage("Sudhish")); 
 function calculateCartPrice(val1,val2,val3, ...num){        //... is rest operator and it contains all the values in a single array
     //the val1,val2 and val3 takes the first 3 values and the rest are contained in the array by the..,(rest opertor) 
    return num
     
 }
- console.log(calculateCartPrice(200,100,500));
+ console.log(calculateCartPrice(200,100,500,600));
  const user={
     username:"Sudhish",
     price:69
   
  }
- function handleObject(hello){
-   console.log(`Username is ${hello.username} and price is ${hello.price} `);
+ function handleObject(us){
+   console.log(`Username is ${us.username} and price is ${us.price} `);
    }
 // handleObject(user)
 handleObject({
-    username:"Rand",
+    username:"Sudhish",
     price:6969,
     cartcolor:"red"
 })
@@ -57,6 +57,6 @@ const arr=[100,200,300,400]
 function returnSecondValue(get){
     return get[0]
 }
-// console.log(returnSecondValue(arr));
+console.log(returnSecondValue(arr));
 console.log(returnSecondValue([50,100,150,200]));
 
