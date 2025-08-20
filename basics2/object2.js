@@ -63,7 +63,7 @@ const course = {
 
 // course.courseInstructor
 
-// const {coursename: i} = course
+// const {coursename: i} = course    //{ }  are used for destructuring an object
 const{courseInstructor:sud}=course
 
 // console.log(courseInstructor);
@@ -75,7 +75,7 @@ console.log(sud);
 //     "price": "free"
 // }
 
-//{}curly braces are used for destructuring 
+
 [
     {},
     {},
