@@ -47,7 +47,7 @@ function calculateCartPrice(val1,val2,val3, ...num){        //... is rest operat
  function handleObject(us){
    console.log(`Username is ${us.username} and price is ${us.price} `);
    }
-// handleObject(user)
+handleObject(user)
 handleObject({
     username:"Sudhish",
     price:6969,
