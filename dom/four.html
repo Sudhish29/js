@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit DOM Elements</title>
+</head>
+<body style="background-color: #212121;color: #ffff;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langname){
+        const li=document.createElement('li')
+        li.innerHTML=`${langname}`
+        document.querySelector('.language').appendChild(li)
+    }
+    function optiLanguage(lang){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(`${lang}`))
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addLanguage("python")
+    optiLanguage("Java")
+    optiLanguage("React")
+    //EDIT
+    const secondlang=document.querySelector("li:nth-child(1)")
+    const newli=document.createElement('li')
+    newli.textContent= "Unknown"
+    secondlang.replaceWith(newli)
+    const first=document.querySelector('li:first-child')
+    first.outerHTML='<li>Not Unknown</li>'
+    const last=document.querySelector("li:last-child")
+    last.remove();
+</script>
+</html>
