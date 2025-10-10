@@ -14,13 +14,21 @@
     const sayDate = function(str){
         console.log(str, Date.now());
     }
+    let t;
 
   document.querySelector('#start').addEventListener('click',function(){
-    setInterval(sayDate,2000,"Sudhish")
+    if(t==null){
+    t=setInterval(sayDate,4000,"Sudhish")
+    console.log("Start");
+    
+    }
   })
  document.querySelector('#stop').addEventListener('click',function(){
-  
-   clearInterval(sayDate)
+ 
+  clearInterval(t);
+   t=null;
+   console.log("Stopped");
+   
   })
    
     
